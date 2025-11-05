@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Miltinho Supermercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="topo">
+                <img class="logo" src="./img/Agrupar 1.png" alt="Logo Supermercado">
+                <h1>Bem-vindo ao O Miltinho Supermercado</h1>
+                <div class="carrinho" onclick="abrirCarrinho()">
+                    🛒 Carrinho (<span id="contador">0</span>)
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- ===== MENU DE NAVEGAÇÃO ===== -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#endereco">Endereço</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <div class="painel">
+        <main>
+            <section id="sobre-nos">
+                <h2>Sobre Nós</h2>
+                <p>O Miltinho Supermercado é dedicado a oferecer os melhores produtos e serviços para nossos clientes.
+                </p>
+            </section>
+
+            <section id="produtos">
+                <h2>Nossos Produtos</h2>
+                <p>Explore nossa vasta gama de produtos frescos e de alta qualidade.</p>
+
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="./img/12965_1.jpg" alt="Arroz">
+                        <h3>Arroz Namorado 1 kg</h3>
+                        <p>R$ 4,49</p>
+                        <button onclick="adicionarAoCarrinho('Arroz 1kg', 4.49)">Adicionar</button>
+                    </div>
+                    <div class="produtos">
+                        <div class="produto">
+                            <img src="./img/l-2fa601d80e884b11ab8c34f3dfd71b3c.jpeg" alt="macarrão">
+                            <h3>Macarrão 500g</h3>
+                            <p>R$ 3,99</p>
+                            <button onclick="adicionarAoCarrinho('Macarrão 500g', 3.99)">Adicionar</button>
+                        </div>
+
+
+                        <div class="produto">
+                            <img src="./img/feijao.jpg" alt="Feijão">
+                            <h3>Feijão 1kg</h3>
+                            <p>R$ 8,00</p>
+                            <button onclick="adicionarAoCarrinho('Feijão 1kg', 8)">Adicionar</button>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <section id="ofertas">
+                <h2>Ofertas Especiais</h2>
+                <p>Aproveite nossas ofertas exclusivas e descontos incríveis.</p>
+            </section>
+
+            <section id="endereco">
+                <h2>Endereço</h2>
+                <p>Rua Perpétua Pinto - Palmeira, Beberibe - CE, 62840-000, Brasil.</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1761260645848!6m8!1m7!1sy6p5ZI6j3snj9t84dQSVYw!2m2!1d-4.356510935494857!2d-38.02896643333545!3f346.6248567321436!4f-2.2105077169442353!5f1.8140947425430922"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </main>
+    </div>
+
+    <!-- ===== CARRINHO FLUTUANTE ===== -->
+    <div id="caixa-carrinho" class="caixa-carrinho">
+        <h3>🛒 Seu Carrinho</h3>
+        <div id="itens-carrinho"></div>
+        <p id="total"></p>
+        <button onclick="fecharCarrinho()">Fechar</button>
+    </div>
+
+    <!-- ===== BOTÃO WHATSAPP ===== -->
+    <a href="https://wa.me/5585992085227" class="whatsapp" target="_blank" title="Fale conosco no WhatsApp">
+        <img src="./img/whatsapp1.png" alt="WhatsApp">
+    </a>
+
+    <!-- ===== SCRIPT ===== -->
+    <script src="script.js"></script>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+        <p>&copy; 2025 O Miltinho Supermercado. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
